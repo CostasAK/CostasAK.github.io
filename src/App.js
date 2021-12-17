@@ -3,7 +3,8 @@ import "./App.css";
 import { FaGithub } from "react-icons/fa";
 import React from "react";
 import avatar from "./avatar.jpg";
-import logo from "./logo.svg";
+
+// import logo from "./logo.svg";
 
 function App() {
   const [scroll, setScroll] = React.useState(false);
