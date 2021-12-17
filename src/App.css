@@ -1,38 +1,98 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  background-color: #282c34;
+  position: fixed;
+  top: 0%;
+  display: flex;
+  flex-flow: row;
+  width: 100vw;
+  height: 64px;
+  min-height: min-content;
   align-items: center;
+  justify-content: left;
+  color: #9da5b4;
+  transition: height 1s;
+}
+
+.header.scrolled {
+  height: 48px;
+}
+
+.header_image {
+  width: 128px;
+  height: 128px;
+  max-width: 25%;
+  align-self: flex-start;
+}
+
+.header_image img {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  line-height: 1;
+  transition: all 1s;
+}
+
+.main {
+  margin-top: 64px;
+  flex: 1;
+  width: 100vw;
+  background: #21252b;
+  color: #abb2bf;
+  transition: margin-top 1s;
+}
+
+.main.scrolled {
+  margin-top: calc(48px - 50px);
+}
+
+.footer {
+  background: #0d1114;
+  color: #cccccc;
+  border-top: 1pt solid #000000;
+  font-size: 0.75rem;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1;
+}
+
+.footer div {
+  padding: 0.2rem;
+  margin: 0;
+  flex-flow: row wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.footer a {
+  padding: 0.2rem;
+  background-color: #0d1114;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  background-color: #000000;
 }
