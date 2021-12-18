@@ -3,7 +3,13 @@
   display: flex;
   flex-flow: column;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
+}
+
+.invisible {
+  visibility: hidden;
+  flex: 1;
+  transition: all 0.5s;
 }
 
 .header {
@@ -12,17 +18,17 @@
   top: 0%;
   display: flex;
   flex-flow: row;
-  width: 100vw;
+  width: 100%;
   height: 64px;
   min-height: min-content;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   color: #9da5b4;
-  transition: height 1s;
+  transition: height 0.5s;
 }
 
 .header.scrolled {
-  height: 48px;
+  height: 30px;
 }
 
 .header_image {
@@ -30,53 +36,83 @@
   height: 128px;
   max-width: 25%;
   align-self: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 0.5rem;
+  border-bottom-right-radius: 25%;
+  background: center / contain no-repeat url("../public/initialen_circle.png");
+  transition: all 0.5s;
+}
+
+.header_image.scrolled {
+  width: 24px;
+  height: 24px;
+  margin: 3px 0 3px 6px;
+  box-shadow: none;
 }
 
 .header_image img {
   height: auto;
   width: 100%;
   object-fit: contain;
+  border-bottom-right-radius: 25%;
+  transition: all 0.5s;
+}
+
+.header_image img.scrolled {
+  visibility: hidden;
+  opacity: 0;
   border-radius: 50%;
 }
 
 .title {
+  flex: 1;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
   padding: 0;
   padding-left: 1rem;
   line-height: 1;
-  transition: all 1s;
+  transition: all 0.5s;
+}
+
+.title.scrolled {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.header .invisible {
+  max-width: 128px;
+}
+
+.header.scrolled .invisible {
+  max-width: 30px;
 }
 
 .main {
   margin-top: 64px;
   flex: 1;
-  width: 100vw;
+  width: 100%;
   background: #21252b;
   color: #abb2bf;
-  transition: margin-top 1s;
-}
-
-.main.scrolled {
-  margin-top: calc(48px - 50px);
+  transition: margin-top 0.5s;
 }
 
 .footer {
   background: #0d1114;
+  position: fixed;
+  bottom: 0;
   color: #cccccc;
   border-top: 1pt solid #000000;
   font-size: 0.75rem;
   display: flex;
   flex-flow: row wrap;
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   line-height: 1;
 }
 
 .footer div {
-  padding: 0.2rem;
+  padding: 0.1rem;
   margin: 0;
   flex-flow: row wrap;
   justify-content: center;
