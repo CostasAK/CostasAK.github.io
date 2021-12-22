@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header isScrolled={isScrolled} />
-      <main className={"main" + (isScrolled ? " scrolled" : "")}>
+      <main className="main">
         <h1>Publications</h1>
         <h2>Binaural Beamforming Based on Automatic Interferer Selection</h2>
         <h3>Abstract</h3>
