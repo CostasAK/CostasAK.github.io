@@ -2,21 +2,14 @@
   text-align: center;
   display: flex;
   flex-flow: column;
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
-}
-
-.invisible {
-  visibility: hidden;
-  flex: 1;
-  transition: all 0.5s;
 }
 
 .main {
-  margin-top: 64px;
+  padding: 70px 10px 22px 140px; 
   flex: 1;
   width: 100%;
-  background: #21252b;
-  color: #abb2bf;
-  transition: margin-top 0.5s;
+  background: var(--secondary-bg);
+  color: var(--secondary-fg);
 }
