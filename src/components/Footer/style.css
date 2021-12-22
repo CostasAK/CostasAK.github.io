@@ -1,12 +1,14 @@
 .footer {
+  --footer-height: 22px;
   background: var(--tertiary-bg);
   color: var(--tertiary-fg);
   position: fixed;
   bottom: 0;
   height: fit-content;
-  min-height: 22px;
+  min-height: var(--footer-height);
   width: 100%;
   padding: 0 10px 0 10px;
+  margin: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -15,7 +17,8 @@
 }
 
 .footer-item {
-  height: 100%;
+  height: fit-content;
+  min-height: var(--footer-height);
   padding: 0 6px;
   margin: 0;
   display: flex;
