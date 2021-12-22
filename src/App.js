@@ -1,31 +1,21 @@
 import "./App.css";
 
 import { FaGithub } from "react-icons/fa";
+import { Header } from "./components/Header";
 import React from "react";
-import avatar from "./avatar.jpg";
-
-// import logo from "./logo.svg";
 
 function App() {
-  const [scroll, setScroll] = React.useState(false);
+  const [isScrolled, setScrolled] = React.useState(false);
   React.useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 50);
+      setScrolled(window.scrollY > 50);
     });
   }, []);
 
   return (
     <div className="App">
-      <header className={"header" + (scroll ? " scrolled" : "")}>
-        <div className={"header_image" + (scroll ? " scrolled" : "")}>
-          <img src={avatar} alt="" className={scroll ? "scrolled" : ""} />
-        </div>
-        <div className={"title" + (scroll ? " scrolled" : "")}>
-          Costas A. Kokke
-        </div>
-        <div className="invisible"></div>
-      </header>
-      <main className={"main" + (scroll ? " scrolled" : "")}>
+      <Header isScrolled={isScrolled} />
+      <main className={"main" + (isScrolled ? " scrolled" : "")}>
         <h1>Publications</h1>
         <h2>Binaural Beamforming Based on Automatic Interferer Selection</h2>
         <h3>Abstract</h3>
@@ -68,11 +58,14 @@ function App() {
         <p>Stuff</p>
       </main>
       <footer className="footer">
-        <div>
+        {/* <div>
           <img
             alt="GitHub last commit (branch)"
             src="https://img.shields.io/github/last-commit/costasak/costasak.github.io/main"
           />
+        </div> */}
+        <div>
+          <span>Made by Costas A. Kokke, MSc.</span>
         </div>
         <a href="https://github.com/CostasAK/costasak.github.io">
           <div>
@@ -80,9 +73,6 @@ function App() {
             <span> Source</span>
           </div>
         </a>
-        <div>
-          <span>Made by Costas A. Kokke, MSc.</span>
-        </div>
       </footer>
     </div>
   );

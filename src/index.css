@@ -1,3 +1,7 @@
+html {
+  font-size: 112.5%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +11,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #21252b;
   color: #abb2bf;
-  font-size: 1.125rem;
 }
 
 code {
