@@ -5,20 +5,18 @@ import avatar from "../../assets/avatar.jpg";
 
 export class Header extends React.Component {
   render() {
+    const add_classes = [];
+
+    if (this.props.isScrolled) {
+      add_classes.push("scrolled");
+    }
+
     return (
-      <header className={"header" + (this.props.isScrolled ? " scrolled" : "")}>
-        <div
-          className={
-            "header_image" + (this.props.isScrolled ? " scrolled" : "")
-          }
-        >
-          <img
-            src={avatar}
-            alt=""
-            className={this.props.isScrolled ? "scrolled" : ""}
-          />
+      <header className={["header", ...add_classes].join(" ")}>
+        <div className={["header_image", ...add_classes].join(" ")}>
+          <img src={avatar} alt="" className={[...add_classes].join(" ")} />
         </div>
-        <div className={"title" + (this.props.isScrolled ? " scrolled" : "")}>
+        <div className={["title", ...add_classes].join(" ")}>
           Costas A. Kokke
         </div>
         <div className="invisible"></div>
