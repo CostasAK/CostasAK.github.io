@@ -37,7 +37,7 @@ a:active {
 
 .invisible {
   visibility: hidden;
-  flex: 1;
+  flex: 1 1 0px;
   transition: all 0.5s;
 }
 

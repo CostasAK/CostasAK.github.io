@@ -1,52 +1,51 @@
 .header {
-  background-color: #282c34;
+  --photo-width: 140px;
+  --logo-width: 24px;
+  --header-height: 30px;
+  background-color: var(--primary-bg);
+  color: var(--primary-fg);
   position: fixed;
   top: 0%;
   display: flex;
   flex-flow: row;
   width: 100%;
-  height: 70px;
-  min-height: min-content;
+  min-height: calc(var(--photo-width) / 2);
+  height: fit-content;
   align-items: center;
   justify-content: center;
-  color: #9da5b4;
-  transition: height 0.5s;
+  transition: all 0.5s;
 }
 
 .header.scrolled {
-  height: 30px;
+  min-height: max-content;
+  height: var(--header-height);
+}
+
+.header_image,
+.header_image img {
+  border-bottom-right-radius: 25%;
+  transition: all 0.5s;
 }
 
 .header_image {
-  width: 140px;
-  height: 140px;
-  max-width: 25%;
+  width: var(--photo-width);
+  height: var(--photo-width);
+  margin-bottom: calc(var(--header-height) - var(--photo-width));
   align-self: flex-start;
+  background: center / contain no-repeat url("../../assets/initials_circle.png");
   box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 0.5rem;
-  border-bottom-right-radius: 25%;
-  background: center / contain no-repeat url("../../assets/initials.svg");
-  transition: all 0.5s;
 }
 
 .header_image.scrolled {
-  width: 24px;
-  height: 24px;
-  margin: 3px 0 3px 6px;
+  width: var(--header-height);
+  height: var(--header-height);
+  background-size: var(--logo-width);
   box-shadow: none;
-}
-
-.header_image img {
-  height: auto;
-  width: 100%;
-  object-fit: contain;
-  border-bottom-right-radius: 25%;
-  transition: all 0.5s;
-}
-
-.header_image img.scrolled {
-  visibility: hidden;
-  opacity: 0;
   border-radius: 50%;
+}
+
+.header_image.scrolled img {
+  opacity: 0;
 }
 
 .title {
@@ -55,7 +54,7 @@
   font-weight: bold;
   margin: 0;
   padding: 0;
-  line-height: 1;
+  line-height: 1.2;
   transition: all 0.5s;
 }
 
@@ -65,9 +64,9 @@
 }
 
 .header .invisible {
-  max-width: 128px;
+  max-width: var(--photo-width);
 }
 
 .header.scrolled .invisible {
-  max-width: 30px;
+  max-width: var(--header-height);
 }

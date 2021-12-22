@@ -14,10 +14,10 @@ export class Header extends React.Component {
     return (
       <header className={["header", ...add_classes].join(" ")}>
         <div className={["header_image", ...add_classes].join(" ")}>
-          <img src={avatar} alt="" className={[...add_classes].join(" ")} />
+          <img alt="" src={avatar} width="100%"></img>
         </div>
         <div className={["title", ...add_classes].join(" ")}>
-          Costas A. Kokke
+          Costas A. Kokke - UNDER CONSTRUCTION
         </div>
         <div className="invisible"></div>
       </header>
