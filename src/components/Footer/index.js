@@ -7,20 +7,17 @@ export class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
-        {/* <div>
-          <img
-            alt="GitHub last commit (branch)"
-            src="https://img.shields.io/github/last-commit/costasak/costasak.github.io/main"
-          />
-        </div> */}
-        <div>
+        <div className="footer-item">
           <span>Made by Costas A. Kokke, MSc.</span>
         </div>
-        <a href="https://github.com/CostasAK/costasak.github.io">
-          <div>
+        <a
+          className="footer-item"
+          href="https://github.com/CostasAK/costasak.github.io"
+        >
+          <div className="footer-subitem">
             <FaGithub />
-            <span> Source</span>
           </div>
+          <div className="footer-subitem"> Source</div>
         </a>
       </footer>
     );
