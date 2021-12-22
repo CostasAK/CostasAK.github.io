@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { FaGithub } from "react-icons/fa";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import React from "react";
 
@@ -57,23 +57,7 @@ function App() {
         <p>Stuff</p>
         <p>Stuff</p>
       </main>
-      <footer className="footer">
-        {/* <div>
-          <img
-            alt="GitHub last commit (branch)"
-            src="https://img.shields.io/github/last-commit/costasak/costasak.github.io/main"
-          />
-        </div> */}
-        <div>
-          <span>Made by Costas A. Kokke, MSc.</span>
-        </div>
-        <a href="https://github.com/CostasAK/costasak.github.io">
-          <div>
-            <FaGithub />
-            <span> Source</span>
-          </div>
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }
