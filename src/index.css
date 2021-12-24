@@ -1,16 +1,24 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
 :root {
   font-size: 112.5%;
-  --primary-bg: #282c34;
-  --primary-fg: #9da5b4;
-  --secondary-bg: #21252b;
-  --secondary-fg: #abb2bf;
-  --tertiary-bg: #0D1114;
-  --tertiary-fg: #cccccc;
+  --primary-bg: #2c3e50;
+  --primary-fg: #ecf0f1;
+  --primary-bg-hl: #ffffff22;
+  --primary-fg-hl: #82AAFF;
+  --secondary-bg: #1abc9c;
+  --secondary-fg: #eeeeee;
+  --tertiary-bg: #dddddd;
+  --tertiary-fg: #2c3e50;
+  --tertiary-bg-hl: #00000011;
+  --border-color: #384f66;
+  --main-width: 960px;
+  --footer-height: 22px;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Fira Code', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,13 +33,14 @@ code {
 }
 
 a {
-  color: inherit;
+  color: var(--primary-fg-hl);
   text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
+  background: var(--primary-bg-hl);
   text-decoration: none;
 }
 
