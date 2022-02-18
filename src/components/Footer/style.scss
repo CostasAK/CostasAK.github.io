@@ -1,0 +1,50 @@
+@use "../../sass/variables" as var;
+@use "sass:math";
+
+$footer-height: 1.6em;
+
+@mixin height {
+  height: fit-content;
+  min-height: $footer-height;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.footer {
+  @include flex-row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  @include height;
+  background: var.$tertiary-bg;
+  color: var.$tertiary-fg;
+  padding: 0 10px;
+  margin: 0;
+  font-size: 0.875rem;
+  div {
+    @include flex-row;
+    width: fit-content;
+    @include height;
+    padding: 0 6px;
+  }
+  a {
+    @include flex-row;
+    width: fit-content;
+    @include height;
+    color: var.$tertiary-fg;
+    padding: 0 6px;
+    span {
+      margin-left: math.div(var.$main-width, 240);
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var.$tertiary-bg-hl;
+    }
+  }
+}
