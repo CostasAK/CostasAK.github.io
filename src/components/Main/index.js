@@ -1,6 +1,10 @@
 import "./style.css";
 
-import { SiGithub, SiGooglescholar, SiLinkedin } from "react-icons/si";
+import {
+  SiGithub as Github,
+  SiLinkedin as Linkedin,
+  SiGooglescholar as Scholar,
+} from "react-icons/si";
 
 import React from "react";
 import avatar from "../../assets/avatar.jpg";
@@ -23,20 +27,24 @@ export class Main extends React.Component {
             in cooperation with the{" "}
             <a href="https://www.tno.nl/en/">
               Netherlands Organisation for applied scientific research
+            </a>{" "}
+            and{" "}
+            <a href="https://english.defensie.nl/topics/netherlands-defence-academy">
+              Netherlands Defence Academy
             </a>
             .
           </div>
           <div className="links">
             <a href="https://www.linkedin.com/in/costasak/">
-              <SiLinkedin />
+              <Linkedin />
               <span>LinkedIn</span>
             </a>
             <a href="https://scholar.google.com/citations?user=z7484-Wfh7gC">
-              <SiGooglescholar />
+              <Scholar />
               <span>Google Scholar</span>
             </a>
             <a href="https://github.com/CostasAK">
-              <SiGithub />
+              <Github />
               <span>GitHub</span>
             </a>
           </div>

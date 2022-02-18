@@ -60,14 +60,17 @@
 }
 
 .links a {
-  width: fit-content;
+  flex: 1;
   height: fit-content;
   padding: calc(var(--main-width) / 240);
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  font-size: 1.25rem;
 }
 
 .links a span {
   margin-left: calc(var(--main-width) / 240);
+  font-size: 1rem;
+  line-height: 1;
 }
