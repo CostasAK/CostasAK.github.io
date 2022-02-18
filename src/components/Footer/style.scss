@@ -1,4 +1,5 @@
 @use "../../sass/variables" as var;
+@use "../../sass/mixins" as mixin;
 @use "sass:math";
 
 $footer-height: 1.6em;
@@ -8,14 +9,8 @@ $footer-height: 1.6em;
   min-height: $footer-height;
 }
 
-@mixin flex-row {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-
 .footer {
-  @include flex-row;
+  @include mixin.flex-row;
   justify-content: space-between;
   position: fixed;
   bottom: 0;
@@ -27,7 +22,7 @@ $footer-height: 1.6em;
   margin: 0;
   font-size: 0.875rem;
   > * {
-    @include flex-row;
+    @include mixin.flex-row;
     width: fit-content;
     @include height;
     padding: 0 6px;
