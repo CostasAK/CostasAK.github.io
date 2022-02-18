@@ -5,7 +5,7 @@
   --primary-bg: #2c3e50;
   --primary-fg: #ecf0f1;
   --primary-bg-hl: #ffffff22;
-  --primary-fg-hl: #82AAFF;
+  --primary-fg-hl: #82aaff;
   --secondary-bg: #1abc9c;
   --secondary-fg: #eeeeee;
   --tertiary-bg: #dddddd;
@@ -18,9 +18,9 @@
 
 body {
   margin: 0;
-  font-family: 'Fira Code', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Fira Code", -apple-system, BlinkMacSystemFont, "Arial",
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--secondary-bg);
@@ -28,7 +28,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
