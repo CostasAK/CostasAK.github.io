@@ -26,19 +26,15 @@ $footer-height: 1.6em;
   padding: 0 10px;
   margin: 0;
   font-size: 0.875rem;
-  div {
+  > * {
     @include flex-row;
     width: fit-content;
     @include height;
     padding: 0 6px;
   }
-  a {
-    @include flex-row;
-    width: fit-content;
-    @include height;
+  > a {
     color: var.$tertiary-fg;
-    padding: 0 6px;
-    span {
+    > span {
       margin-left: math.div(var.$main-width, 240);
     }
     &:hover,
