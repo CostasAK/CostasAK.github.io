@@ -1,0 +1,63 @@
+@use "../../sass/variables" as var;
+@use "../../sass/mixins" as mixin;
+@use "sass:math";
+
+.Bio {
+  @include mixin.flex-column;
+  width: math.div(var.$main-width, 3);
+  margin: 0;
+  padding: 0;
+  background: var.$primary-bg;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  > * {
+    width: 100%;
+    margin: 0;
+    padding: 0 5% 3% 5%;
+  }
+  > .avatar {
+    padding: 0;
+    background: linear-gradient(0deg, var.$primary-bg 50%, var.$secondary-bg 50%);
+    text-align: center;
+    > img {
+      width: 50%;
+      border-radius: 50%;
+      border: math.div(var.$main-width, 100) solid var.$primary-bg;
+    }
+  }
+  > .name {
+    color: #f78794;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.875rem;
+    font-variant: small-caps;
+  }
+  > .bio {
+    width: 100%;
+    padding-bottom: math.div(var.$main-width, 60);
+    border-bottom: 1pt solid var.$border-color;
+  }
+  > .links {
+    display: grid;
+    width: fit-content;
+    justify-items: left;
+    margin: math.div(var.$main-width, 80) 0 0 0;
+    row-gap: math.div(var.$main-width, 100);
+    > a {
+      flex: 1;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      padding: math.div(var.$main-width, 240);
+      font-size: 1.25rem;
+      > span {
+        width: max-content;
+        margin-left: math.div(var.$main-width, 240);
+        line-height: 1;
+        font-size: 1rem;
+        font-variant: small-caps;
+        font-weight: 500;
+      }
+    }
+  }
+}
