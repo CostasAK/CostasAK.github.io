@@ -1,12 +1,12 @@
 import {
   Center,
   Container,
+  Flex,
   Heading,
   Icon,
   Link,
   Text,
   VStack,
-  Wrap,
 } from "@chakra-ui/react";
 
 import { GithubIcon } from "./assets/github";
@@ -46,7 +46,13 @@ function App() {
           <Heading as="h2" variant="container">
             Socials
           </Heading>
-          <Wrap justify="center" spacing="8" shouldWrapChildren={true}>
+          <Flex
+            justify="space-evenly"
+            align="flex-end"
+            wrap="wrap"
+            spacing="8"
+            shouldWrapChildren={true}
+          >
             <Link
               href="https://www.linkedin.com/in/costasak/"
               isExternal={true}
@@ -62,7 +68,7 @@ function App() {
             <Link href="https://ko-fi.com/CostasAK" isExternal={true}>
               Ko-fi
             </Link>
-          </Wrap>
+          </Flex>
         </Container>
       </VStack>
     </Center>
