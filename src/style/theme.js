@@ -146,10 +146,24 @@ export const theme = extendTheme({
         },
       },
     },
+    Image: {
+      variants: {
+        invertIfDark: {
+          filter: "invert(1)",
+        },
+      },
+    },
     Link: {
       baseStyle: ({ colorMode }) => ({
         color: colorMode === "dark" ? "blue.400" : "blue.500",
       }),
+    },
+  },
+  styles: {
+    global: {
+      body: {
+        imageRendering: "pixelated",
+      },
     },
   },
   config: { useSystemColorMode: true, initialColorMode: "system" },

@@ -2,11 +2,14 @@ import {
   Center,
   Container,
   Heading,
+  Icon,
   Link,
   Text,
   VStack,
   Wrap,
 } from "@chakra-ui/react";
+
+import { GithubIcon } from "./assets/github";
 
 function App() {
   return (
@@ -51,7 +54,10 @@ function App() {
               LinkedIn
             </Link>
             <Link href="https://github.com/CostasAK" isExternal={true}>
-              GitHub
+              <VStack align="center">
+                <Icon as={GithubIcon} boxSize="48px" />
+                <Text>GitHub</Text>
+              </VStack>
             </Link>
             <Link href="https://ko-fi.com/CostasAK" isExternal={true}>
               Ko-fi
