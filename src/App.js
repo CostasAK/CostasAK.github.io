@@ -1,14 +1,65 @@
-import "./App.scss";
-
-import { Bio } from "./components/Bio";
-import { Footer } from "./components/Footer";
+import {
+  Center,
+  Container,
+  Heading,
+  Link,
+  Text,
+  VStack,
+  Wrap,
+} from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App">
-      <Bio />
-      <Footer />
-    </div>
+    <Center h="100vh">
+      <VStack spacing="2.5rem">
+        <Heading as="h1" variant="outline">
+          Costas A. Kokke
+        </Heading>
+        <Container>
+          <Heading as="h2" variant="container">
+            Bio
+          </Heading>
+          <Text>
+            I'm currently researching adaptive radar technologies and optimised
+            resource allocation as a doctoral student at the{" "}
+            <Link href="https://www.tudelft.nl/en/" isExternal={true}>
+              Delft University of Technology
+            </Link>{" "}
+            in cooperation with the{" "}
+            <Link href="https://www.tno.nl/en/" isExternal={true}>
+              Netherlands Organisation for applied scientific research
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="https://english.defensie.nl/topics/netherlands-defence-academy"
+              isExternal={true}
+            >
+              Netherlands Defence Academy
+            </Link>
+            .
+          </Text>
+        </Container>
+        <Container>
+          <Heading as="h2" variant="container">
+            Socials
+          </Heading>
+          <Wrap justify="center" spacing="8" shouldWrapChildren={true}>
+            <Link
+              href="https://www.linkedin.com/in/costasak/"
+              isExternal={true}
+            >
+              LinkedIn
+            </Link>
+            <Link href="https://github.com/CostasAK" isExternal={true}>
+              GitHub
+            </Link>
+            <Link href="https://ko-fi.com/CostasAK" isExternal={true}>
+              Ko-fi
+            </Link>
+          </Wrap>
+        </Container>
+      </VStack>
+    </Center>
   );
 }
 
