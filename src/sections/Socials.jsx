@@ -15,13 +15,7 @@ export const Socials = () => (
     <Heading as="h2" variant="container">
       Socials
     </Heading>
-    <Flex
-      justify="space-evenly"
-      align="flex-end"
-      wrap="wrap"
-      spacing="8"
-      shouldWrapChildren={true}
-    >
+    <Flex justify="space-evenly" align="flex-end" wrap="wrap" spacing="8">
       <Link href="https://www.linkedin.com/in/costasak/" isExternal={true}>
         LinkedIn
       </Link>
