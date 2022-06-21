@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "prepare": "huskty install"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
