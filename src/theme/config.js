@@ -1,1 +1,1 @@
-export const config = { useSystemColorMode: true, initialColorMode: "system" };
+export const config = { useSystemColorMode: false, initialColorMode: "system" };

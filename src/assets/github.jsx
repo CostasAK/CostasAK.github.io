@@ -1,19 +1,15 @@
 export const GithubIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    shapeRendering="crispEdges"
-    viewBox="0 -0.5 24 24"
-    width="24"
-    height="24"
+    shape-rendering="crispEdges"
+    viewBox="0 -0.5 16 16"
+    width="16"
+    height="16"
     {...props}
   >
-    <metadata>
-      Generated with pixel-perfect-svg
-      https://github.com/kagof/pixel-perfect-svg
-    </metadata>
     <path
       stroke="currentColor"
-      d="M8,1h8M6,2h12M5,3h14M4,4h2M7,4h10M18,4h2M3,5h3M19,5h2M2,6h4M19,6h3M2,7h4M19,7h3M1,8h4M19,8h4M1,9h4M19,9h4M1,10h4M20,10h3M1,11h4M20,11h3M1,12h4M19,12h4M1,13h4M19,13h4M1,14h5M19,14h4M1,15h6M18,15h5M2,16h1M5,16h3M16,16h6M2,17h3M6,17h3M15,17h7M3,18h2M15,18h6M3,19h3M15,19h6M4,20h5M15,20h5M6,21h3M15,21h3M7,22h2M15,22h2"
+      d="M1,0h14M0,1h4M5,1h8M14,1h2M0,2h4M6,2h6M14,2h2M0,3h4M14,3h2M0,4h3M14,4h2M0,5h3M15,5h1M0,6h3M15,6h1M0,7h3M15,7h1M0,8h4M14,8h2M0,9h5M13,9h3M0,10h1M3,10h4M11,10h5M0,11h3M4,11h2M12,11h4M0,12h4M12,12h4M0,13h6M12,13h4M0,14h6M12,14h4M1,15h14"
     />
   </svg>
 );
