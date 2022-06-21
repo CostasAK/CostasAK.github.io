@@ -22,4 +22,4 @@ jobs:
       - name: "Clean Install"
         run: npm ci
       - name: "Run Tests"
-        run: npm test --passWithNoTests
+        run: npm test
