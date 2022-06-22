@@ -5,5 +5,8 @@ export const styles = {
       imageRendering: "pixelated",
       hyphens: "auto",
     },
+    "*": {
+      fontWeight: "400 !important",
+    },
   },
 };
