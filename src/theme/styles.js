@@ -7,6 +7,7 @@ export const styles = {
     },
     "*": {
       fontWeight: "400 !important",
+      maxWidth: "100%",
     },
     "img[src$='.gif'], img[src$='.jpeg'], img[src$='.jpg'], img[src$='.png']": {
       imageRendering: "pixelated",
