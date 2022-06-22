@@ -7,7 +7,7 @@ export const Link = {
   }),
   variants: {
     linkedin: ({ colorMode }) => ({
-      color: "#2577b9",
+      color: colorMode === "dark" ? "#2577b9" : "#0a66c2",
     }),
     github: ({ colorMode }) => ({
       color: colorMode === "dark" ? "#f3f1f1" : "#2a2d2f",
