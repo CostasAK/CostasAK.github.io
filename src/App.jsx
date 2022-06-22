@@ -1,5 +1,6 @@
 import { Center, Container, Heading, Image, VStack } from "@chakra-ui/react";
 
+import { BackToTopButton } from "components/BackToTopButton";
 import { Bio } from "sections/Bio";
 import { ColorModeSwitch } from "components/ColorModeSwitch";
 import { Socials } from "sections/Socials";
@@ -31,6 +32,7 @@ function App() {
         <Bio />
         <Socials />
       </VStack>
+      <BackToTopButton />
     </Center>
   );
 }
