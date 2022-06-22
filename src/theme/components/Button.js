@@ -67,4 +67,106 @@ export const Button = {
       },
     };
   },
+  variants: {
+    primary: {
+      color: "white",
+      backgroundColor: "blue.400",
+      _after: {
+        boxShadow: "inset -4px -4px var(--chakra-colors-blue-600)",
+      },
+      _hover: {
+        backgroundColor: "blue.500",
+        _before: {
+          boxShadow: `none`,
+        },
+        _after: {
+          boxShadow: "inset -6px -6px var(--chakra-colors-blue-600)",
+        },
+      },
+      _active: {
+        backgroundColor: "blue.500",
+        _before: {
+          boxShadow: `none`,
+        },
+        _after: {
+          boxShadow: "inset 4px 4px var(--chakra-colors-blue-600)",
+        },
+      },
+    },
+    success: {
+      color: "white",
+      backgroundColor: "green.400",
+      _after: {
+        boxShadow: "inset -4px -4px var(--chakra-colors-green-600)",
+      },
+      _hover: {
+        backgroundColor: "green.500",
+        _before: {
+          boxShadow: `none`,
+        },
+        _after: {
+          boxShadow: "inset -6px -6px var(--chakra-colors-green-600)",
+        },
+      },
+      _active: {
+        backgroundColor: "green.500",
+        _before: {
+          boxShadow: `none`,
+        },
+        _after: {
+          boxShadow: "inset 4px 4px var(--chakra-colors-green-600)",
+        },
+      },
+    },
+    warning: {
+      color: "gray.900",
+      backgroundColor: "yellow.400",
+      _after: {
+        boxShadow: "inset -4px -4px var(--chakra-colors-yellow-600)",
+      },
+      _hover: {
+        backgroundColor: "yellow.500",
+        _before: {
+          boxShadow: `none`,
+        },
+        _after: {
+          boxShadow: "inset -6px -6px var(--chakra-colors-yellow-600)",
+        },
+      },
+      _active: {
+        backgroundColor: "yellow.500",
+        _before: {
+          boxShadow: `none`,
+        },
+        _after: {
+          boxShadow: "inset 4px 4px var(--chakra-colors-yellow-600)",
+        },
+      },
+    },
+    error: {
+      color: "white",
+      backgroundColor: "red.400",
+      _after: {
+        boxShadow: "inset -4px -4px var(--chakra-colors-red-600)",
+      },
+      _hover: {
+        backgroundColor: "red.500",
+        _before: {
+          boxShadow: `none`,
+        },
+        _after: {
+          boxShadow: "inset -6px -6px var(--chakra-colors-red-600)",
+        },
+      },
+      _active: {
+        backgroundColor: "red.500",
+        _before: {
+          boxShadow: `none`,
+        },
+        _after: {
+          boxShadow: "inset 4px 4px var(--chakra-colors-red-600)",
+        },
+      },
+    },
+  },
 };

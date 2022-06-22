@@ -25,8 +25,7 @@ export const BackToTopButton = forwardRef((props, ref) => {
           behavior: "smooth",
         });
       }}
-      backgroundColor="red.400"
-      color="white"
+      variant="error"
       pos="fixed"
       bottom="6"
       right="8"
