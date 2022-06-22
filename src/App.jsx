@@ -1,6 +1,7 @@
 import { Center, Container, Heading, Image, VStack } from "@chakra-ui/react";
 
 import { Bio } from "sections/Bio";
+import { ColorModeSwitch } from "components/ColorModeSwitch";
 import { Socials } from "sections/Socials";
 import avatar from "./assets/avatar_140.jpg";
 import { useMount } from "hooks/useMount";
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <Center minH="var(--vh)" padding={["1rem", "2rem", "4rem"]}>
+      <ColorModeSwitch />
       <VStack spacing="2.5rem">
         <Container variant="pixelCircle">
           <Image src={avatar} boxSize="280px" />
