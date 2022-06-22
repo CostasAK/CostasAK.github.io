@@ -42,7 +42,7 @@ export const Button = {
           ? "gray.900"
           : "var(--chakra-colors-chakra-body-bg)",
         _before: {
-          boxShadow: `inset 0 0 0 100vmax rgba(0, 0, 0, 0.1)`,
+          boxShadow: `inset 0 0 0 100vmax rgba(128, 128, 128, 0.15)`,
         },
         _after: {
           boxShadow: "inset -6px -6px rgba(128, 128, 128, 0.5)",
@@ -59,7 +59,7 @@ export const Button = {
           ? "gray.800"
           : "gray.100",
         _before: {
-          boxShadow: `inset 0 0 0 100vmax rgba(0, 0, 0, 0.1)`,
+          boxShadow: `inset 0 0 0 100vmax rgba(128, 128, 128, 0.15)`,
         },
         _after: {
           boxShadow: "inset 4px 4px rgba(128, 128, 128, 0.5)",
