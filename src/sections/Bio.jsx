@@ -1,10 +1,9 @@
-import { Container, Heading, Link, Text } from "@chakra-ui/react";
+import { Link, Text } from "@chakra-ui/react";
+
+import { SectionContainer } from "components/SectionContainer";
 
 export const Bio = () => (
-  <Container>
-    <Heading as="h2" variant="container">
-      Bio
-    </Heading>
+  <SectionContainer heading="Bio">
     <Text>
       I'm currently researching adaptive radar technologies and optimised
       resource allocation as a doctoral student at the{" "}
@@ -24,5 +23,5 @@ export const Bio = () => (
       </Link>
       .
     </Text>
-  </Container>
+  </SectionContainer>
 );

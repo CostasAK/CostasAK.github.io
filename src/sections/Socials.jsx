@@ -1,22 +1,12 @@
-import {
-  Container,
-  Flex,
-  Heading,
-  Icon,
-  Link,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Flex, Icon, Link, Text, VStack } from "@chakra-ui/react";
 
 import { GithubIcon } from "assets/github";
 import { KofiIcon } from "assets/kofi";
 import { LinkedinIcon } from "assets/linkedin";
+import { SectionContainer } from "components/SectionContainer";
 
 export const Socials = () => (
-  <Container>
-    <Heading as="h2" variant="container">
-      Socials
-    </Heading>
+  <SectionContainer heading="Socials">
     <Flex justify="space-evenly" align="flex-end" wrap="wrap" gap="6">
       <Link
         href="https://www.linkedin.com/in/costasak/"
@@ -45,5 +35,5 @@ export const Socials = () => (
         </VStack>
       </Link>
     </Flex>
-  </Container>
+  </SectionContainer>
 );
