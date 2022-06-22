@@ -3,6 +3,7 @@ export const styles = {
     body: {
       imageResolution: "0.5dppx",
       imageRendering: "pixelated",
+      hyphens: "auto",
     },
   },
 };
