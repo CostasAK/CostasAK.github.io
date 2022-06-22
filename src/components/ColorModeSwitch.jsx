@@ -4,7 +4,13 @@ export const ColorModeSwitch = forwardRef((props, ref) => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Button onClick={toggleColorMode} pos="fixed" right="8" top="6">
+    <Button
+      onClick={toggleColorMode}
+      pos="fixed"
+      right="8"
+      top="6"
+      zIndex="sticky"
+    >
       {colorMode === "light" ? "Dark" : "Light"}
     </Button>
   );
