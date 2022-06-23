@@ -20,12 +20,11 @@ export const ColorModeSwitch = forwardRef((props, ref) => {
         right="8"
         top="6"
         zIndex="sticky"
-        paddingInline="2px"
+        size=""
       >
         <Icon
           as={colorMode === "light" ? UmbralIcon : AstralIcon}
           boxSize="32px"
-          transform="translateY(-7px)"
         />
       </Button>
     </Tooltip>
