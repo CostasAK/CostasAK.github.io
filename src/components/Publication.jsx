@@ -62,7 +62,7 @@ export const Publication = forwardRef(
         >
           <Td>{title}</Td>
           <Td isNumeric>{cited && cited}</Td>
-          <Td>{published && published}</Td>
+          <Td>{published && published.slice(0, -3)}</Td>
         </Tr>
         <Modal
           isOpen={modalIsOpen}
