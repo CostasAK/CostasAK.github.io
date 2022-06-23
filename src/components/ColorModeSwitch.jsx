@@ -1,4 +1,7 @@
-import { Button, forwardRef, useColorMode } from "@chakra-ui/react";
+import { Button, Icon, forwardRef, useColorMode } from "@chakra-ui/react";
+
+import { AstralIcon } from "assets/astral";
+import { UmbralIcon } from "assets/umbral";
 
 export const ColorModeSwitch = forwardRef((props, ref) => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -10,8 +13,13 @@ export const ColorModeSwitch = forwardRef((props, ref) => {
       right="8"
       top="6"
       zIndex="sticky"
+      paddingInline="2px"
     >
-      {colorMode === "light" ? "Dark" : "Light"}
+      <Icon
+        as={colorMode === "light" ? UmbralIcon : AstralIcon}
+        boxSize="32px"
+        transform="translateY(-7px)"
+      />
     </Button>
   );
 });
