@@ -3,8 +3,9 @@ import { Center, Container, Heading, Image, VStack } from "@chakra-ui/react";
 import { BackToTopButton } from "components/BackToTopButton";
 import { Bio } from "sections/Bio";
 import { ColorModeSwitch } from "components/ColorModeSwitch";
+import { Publications } from "sections/Publications";
 import { Socials } from "sections/Socials";
-import avatar from "./assets/avatar_140.jpg";
+import avatar from "./assets/avatar_12b_140.jpg";
 import { useMount } from "hooks/useMount";
 
 const updateInnerHeight = () =>
@@ -31,6 +32,7 @@ function App() {
         </Heading>
         <Bio />
         <Socials />
+        <Publications />
       </VStack>
       <BackToTopButton />
     </Center>
