@@ -23,6 +23,12 @@ jobs:
         run: npm ci
       - name: "Run Tests"
         run: npm test
+      - name: "GH Pages Deploy"
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish
         uses: cloudflare/pages-action@1
         with:
@@ -31,9 +37,3 @@ jobs:
           projectName: portfolio
           directory: build
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      - name: "GH Pages Deploy"
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
