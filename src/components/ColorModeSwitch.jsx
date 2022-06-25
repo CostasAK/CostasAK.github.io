@@ -21,6 +21,7 @@ export const ColorModeSwitch = forwardRef((props, ref) => {
         top="6"
         zIndex="sticky"
         size=""
+        p="3px 4px"
       >
         <Icon
           as={colorMode === "light" ? UmbralIcon : AstralIcon}
