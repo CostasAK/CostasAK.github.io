@@ -44,17 +44,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLIC_URL: https://costasak.github.io
-  ghpages:
-    name: GitHub Pages
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Checkout Repository"
-        uses: actions/checkout@v3
-      - name: "Setup Node.js"
-        uses: actions/setup-node@v3
-        with:
-          node-version: current
-          cache: "npm"
-      - name: "Clean Install"
-        run: npm ci
