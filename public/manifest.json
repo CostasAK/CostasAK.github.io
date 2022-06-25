@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "CostasAK",
+  "name": "Costas A. Kokke",
   "icons": [
     {
       "src": "initialen_circle.png",
@@ -9,6 +9,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#abb2bf",
-  "background_color": "#282c34"
+  "theme_color": "#ededed",
+  "background_color": "#2d3339"
 }
