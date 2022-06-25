@@ -6,8 +6,8 @@ on:
     branches: [main]
 
 jobs:
-  test:
-    name: Test
+  deploy:
+    name: Continuous Deployment
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout Repository"
