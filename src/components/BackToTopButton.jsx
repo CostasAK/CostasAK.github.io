@@ -6,8 +6,7 @@ import { useState } from "react";
 export const BackToTopButton = forwardRef((props, ref) => {
   const [scrolled, setScrolled] = useState(false);
 
-  const updateScrolled = () =>
-    setScrolled(window.scrollY > 0.5 * window.innerHeight);
+  const updateScrolled = () => setScrolled(window.scrollY > 320);
 
   useMount(() => {
     updateScrolled();
@@ -27,8 +26,8 @@ export const BackToTopButton = forwardRef((props, ref) => {
       }}
       variant="error"
       pos="fixed"
-      bottom="6"
-      right="8"
+      bottom="3"
+      right="4"
       opacity={scrolled ? 1 : 0}
       transform={scrolled ? "none" : "translate3d(0, 2rem, 0)"}
     >

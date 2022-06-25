@@ -30,7 +30,12 @@ export const SectionContainer = forwardRef(
         ref={ref}
         {...props}
       >
-        <SectionHeader as={headingAs}>{heading}</SectionHeader>
+        <SectionHeader
+          as={headingAs}
+          id={heading.toLowerCase().replace(" ", "-")}
+        >
+          {heading}
+        </SectionHeader>
         {children}
       </Container>
     );

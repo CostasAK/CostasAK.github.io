@@ -1,5 +1,8 @@
 export const styles = {
   global: {
+    html: {
+      scrollBehavior: "smooth",
+    },
     body: {
       imageResolution: "48dpi",
       imageRendering: "pixelated",
