@@ -21,6 +21,29 @@ jobs:
         run: npm ci
       - name: "Run Tests"
         run: npm test
+      - name: "Build"
+        run: npm run build
+      - name: "Cloudflare Config"
+        run: cp ./.cloudflare/* ./build/
+      - name: Publish
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: portfolio
+          directory: build
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: "Clean"
+        run: npm run clean
+      - name: "No Jekyll"
+        run: touch ./public/.nojekyll
+      - name: "GH Pages Deploy"
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLIC_URL: https://costasak.github.io
   ghpages:
     name: GitHub Pages
     needs: test
@@ -35,34 +58,3 @@ jobs:
           cache: "npm"
       - name: "Clean Install"
         run: npm ci
-      - name: "GH Pages Deploy"
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLIC_URL: https://costasak.github.io
-  cfpages:
-    name: CloudFlare Pages
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Checkout Repository"
-        uses: actions/checkout@v3
-      - name: "Setup Node.js"
-        uses: actions/setup-node@v3
-        with:
-          node-version: current
-          cache: "npm"
-      - name: "Clean Install"
-        run: npm ci
-      - name: "Build"
-        run: npm run build
-      - name: Publish
-        uses: cloudflare/pages-action@1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: portfolio
-          directory: build
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

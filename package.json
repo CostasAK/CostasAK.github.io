@@ -27,6 +27,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -t true",
+    "clean": "rm -r build",
     "prepare": "husky install"
   },
   "eslintConfig": {
