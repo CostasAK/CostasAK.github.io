@@ -57,10 +57,11 @@ export const Projects = () => {
               _hover={{ background: "gray.50" }}
               _dark={{ _hover: { background: "gray.800" } }}
               px={2}
+              py={1}
             >
               <Flex
                 direction={index % 2 ? "row-reverse" : "row"}
-                gap={3}
+                gap={4}
                 align="center"
               >
                 {image && (
@@ -70,7 +71,7 @@ export const Projects = () => {
                     maxH={imageHeight}
                     w={24}
                     h={24}
-                    p={1}
+                    py={1}
                   ></Image>
                 )}
                 <VStack align="stretch">
