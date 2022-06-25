@@ -3,6 +3,7 @@ import { Center, Container, Heading, Image, VStack } from "@chakra-ui/react";
 import { BackToTopButton } from "components/BackToTopButton";
 import { Bio } from "sections/Bio";
 import { ColorModeSwitch } from "components/ColorModeSwitch";
+import { Projects } from "sections/Projects";
 import { Publications } from "sections/Publications";
 import { Socials } from "sections/Socials";
 import avatar from "./assets/avatar_12b_140.jpg";
@@ -21,9 +22,9 @@ function App() {
   });
 
   return (
-    <Center minH="var(--vh)" padding={["1rem", "2rem", "4rem"]}>
+    <Center minH="var(--vh)" padding={[4, 8, 16]} overflowX="hidden">
       <ColorModeSwitch />
-      <VStack spacing="2.5rem">
+      <VStack spacing={10}>
         <Container variant="pixelCircle">
           <Image src={avatar} boxSize="280px" />
         </Container>
@@ -32,6 +33,7 @@ function App() {
         </Heading>
         <Bio />
         <Socials />
+        <Projects />
         <Publications />
       </VStack>
       <BackToTopButton />
