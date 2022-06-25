@@ -23,8 +23,12 @@ jobs:
         run: npm ci
       - name: "Run Tests"
         run: npm test
-      - name: "Build Site"
+      - name: "Build"
         run: npm run build
+        env:
+          PUBLIC_URL: https://${{ github.head_ref }}.portfolio-dn4.pages.dev
+      - name: "Cloudflare Config"
+        run: cp ./.cloudflare/* ./build/
       - name: Publish
         uses: cloudflare/pages-action@1
         with:
