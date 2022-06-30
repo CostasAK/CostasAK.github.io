@@ -7,10 +7,6 @@ export const AstralIcon = (props) => (
     height="16"
     {...props}
   >
-    <metadata>
-      Generated with pixel-perfect-svg
-      https://github.com/kagof/pixel-perfect-svg
-    </metadata>
     <path stroke="#292420" opacity="0.6901960784313725" d="M7,0h1" />
     <path stroke="#292420" opacity="0.4235294117647059" d="M8,0h1" />
     <path stroke="#292429" opacity="0.09019607843137255" d="M4,1h1" />

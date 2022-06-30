@@ -7,10 +7,6 @@ export const UmbralIcon = (props) => (
     height="16"
     {...props}
   >
-    <metadata>
-      Generated with pixel-perfect-svg
-      https://github.com/kagof/pixel-perfect-svg
-    </metadata>
     <path stroke="#202420" opacity="0.03137254901960784" d="M5,0h1M10,0h1" />
     <path stroke="#202420" opacity="0.41568627450980394" d="M6,0h1M9,0h1" />
     <path stroke="#202420" opacity="0.7411764705882353" d="M7,0h2" />

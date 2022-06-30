@@ -15,6 +15,8 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
+import { CrossIcon } from "assets/cross";
+
 const PublicationElement = ({ name, children }) =>
   children ? (
     <Box>
@@ -73,7 +75,9 @@ export const Publication = forwardRef(
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>{title}</ModalHeader>
-            <ModalCloseButton />
+            <ModalCloseButton borderRadius={0}>
+              <CrossIcon />
+            </ModalCloseButton>
             <ModalBody>
               <VStack spacing={6} align="start">
                 <PublicationElement name="Authors">
