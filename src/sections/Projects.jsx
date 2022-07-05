@@ -72,6 +72,7 @@ export const Projects = () => {
                     w={24}
                     h={24}
                     py={1}
+                    alt={`${project.name} icon`}
                   ></Image>
                 )}
                 <VStack align="stretch">

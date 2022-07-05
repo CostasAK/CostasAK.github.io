@@ -59,7 +59,7 @@ function App() {
       </HStack>
       <VStack spacing={10}>
         <Container variant="pixelCircle">
-          <Image src={avatar} boxSize="280px" />
+          <Image src={avatar} boxSize="280px" alt="Headshot" />
         </Container>
         <Heading as="h1" variant="outline" textAlign="center">
           Costas A. Kokke
