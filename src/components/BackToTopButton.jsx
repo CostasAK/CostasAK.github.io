@@ -30,6 +30,7 @@ export const BackToTopButton = forwardRef((props, ref) => {
       right="4"
       opacity={scrolled ? 1 : 0}
       transform={scrolled ? "none" : "translate3d(0, 2rem, 0)"}
+      aria-label="Back to top"
     >
       <Text transform="rotate(90deg)" marginInlineStart="-3px">
         {"<"}

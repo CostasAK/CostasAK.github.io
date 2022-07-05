@@ -14,7 +14,14 @@ export const ColorModeSwitch = forwardRef((props, ref) => {
 
   return (
     <Tooltip label={colorMode === "light" ? "Dark Mode" : "Light Mode"}>
-      <Button onClick={toggleColorMode} size="" p="3px 4px">
+      <Button
+        onClick={toggleColorMode}
+        size=""
+        p="3px 4px"
+        aria-label={`Switch to ${
+          colorMode === "light" ? "Dark Mode" : "Light Mode"
+        }`}
+      >
         <Icon
           as={colorMode === "light" ? UmbralIcon : AstralIcon}
           boxSize="32px"

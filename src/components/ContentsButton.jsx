@@ -21,6 +21,7 @@ export const ContentsButton = forwardRef(({ sections }, ref) => {
           size=""
           p="3px 4px"
           icon={<Icon boxSize="32px" as={ContentsIcon} />}
+          aria-label="Table of Contents"
         />
       </Tooltip>
       <MenuList>
