@@ -10,7 +10,6 @@ export const Publications = () => (
         <Thead>
           <Tr>
             <Th></Th>
-            <Th>Cited</Th>
             <Th>Published</Th>
           </Tr>
         </Thead>

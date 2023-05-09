@@ -63,7 +63,6 @@ export const Publication = forwardRef(
           _dark={{ _hover: { background: "gray.800" } }}
         >
           <Td>{title}</Td>
-          <Td isNumeric>{cited && cited}</Td>
           <Td>{published && published.slice(0, -3)}</Td>
         </Tr>
         <Modal
