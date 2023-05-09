@@ -12,6 +12,12 @@ import { SectionContainer } from "components/SectionContainer";
 
 const projects = [
   {
+    name: "Closed loop adaptive radar resource allocation (CLARA)",
+    href: "https://cas.tudelft.nl/Research/project.php?id=184&pid=759",
+    description:
+      "My PhD project at the Delft University of Technology in cooperation with the Netherlands Organisation for applied scientific research and Netherlands Defence Academy.",
+  },
+  {
     name: "Destiny 2 Buddy",
     href: "https://destiny2.kokke.eu",
     image: {
@@ -31,12 +37,6 @@ const projects = [
       width: 76,
       height: 76,
     },
-  },
-  {
-    name: "Closed loop adaptive radar resource allocation (CLARA)",
-    href: "https://cas.tudelft.nl/Research/project.php?id=184&pid=759",
-    description:
-      "My PhD project at the Delft University of Technology in cooperation with the Netherlands Organisation for applied scientific research and Netherlands Defence Academy.",
   },
 ];
 
