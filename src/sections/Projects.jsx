@@ -19,9 +19,9 @@ const projects = [
   },
   {
     name: "Destiny 2 Buddy",
-    href: "https://destiny2.kokke.eu",
+    href: "https://d2buddy.net",
     image: {
-      src: "https://destiny2.kokke.eu/icons/mstile-icon-558.png",
+      src: "https://d2buddy.net/icons/mstile-icon-558.png",
       width: 558,
       height: 558,
     },
