@@ -12,6 +12,9 @@ export const Link = {
     github: ({ colorMode }) => ({
       color: colorMode === "dark" ? "#f3f1f1" : "#2a2d2f",
     }),
+    mastodon: ({ colorMode }) => ({
+      color: colorMode === "dark" ? "#8c8dff" : "#595aff",
+    }),
     kofi: ({ colorMode }) => ({
       color: "#29abe0",
     }),
