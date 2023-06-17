@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://costasak.github.io/static/css/main.dcbb1f10.css",
-    "main.js": "https://costasak.github.io/static/js/main.6eb07e8b.js",
+    "main.js": "https://costasak.github.io/static/js/main.a137e9ea.js",
     "static/media/press-start-2p-all-400-normal.woff": "https://costasak.github.io/static/media/press-start-2p-all-400-normal.1b4eaa5b3861e49b57fc.woff",
     "static/media/avatar_12b_140.jpg": "https://costasak.github.io/static/media/avatar_12b_140.6628245ad1bed0fa6e21.jpg",
     "static/media/press-start-2p-latin-400-normal.woff2": "https://costasak.github.io/static/media/press-start-2p-latin-400-normal.26606132347682ad49c1.woff2",
@@ -11,10 +11,10 @@
     "static/media/press-start-2p-greek-400-normal.woff2": "https://costasak.github.io/static/media/press-start-2p-greek-400-normal.cf2420b5a5026b29ba84.woff2",
     "index.html": "https://costasak.github.io/index.html",
     "main.dcbb1f10.css.map": "https://costasak.github.io/static/css/main.dcbb1f10.css.map",
-    "main.6eb07e8b.js.map": "https://costasak.github.io/static/js/main.6eb07e8b.js.map"
+    "main.a137e9ea.js.map": "https://costasak.github.io/static/js/main.a137e9ea.js.map"
   },
   "entrypoints": [
     "static/css/main.dcbb1f10.css",
-    "static/js/main.6eb07e8b.js"
+    "static/js/main.a137e9ea.js"
   ]
 }
