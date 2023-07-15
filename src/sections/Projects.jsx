@@ -18,7 +18,7 @@ const projects = [
       "My PhD project at the Delft University of Technology in cooperation with the Netherlands Organisation for applied scientific research and Netherlands Defence Academy.",
   },
   {
-    name: "Destiny 2 Buddy",
+    name: "D2 Buddy",
     href: "https://d2buddy.net",
     image: {
       src: "https://d2buddy.net/icons/mstile-icon-558.png",
