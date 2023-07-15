@@ -13,7 +13,7 @@ import { SectionContainer } from "components/SectionContainer";
 const projects = [
   {
     name: "Closed loop adaptive radar resource allocation (CLARA)",
-    href: "https://cas.tudelft.nl/Research/project.php?id=184&pid=759",
+    href: "https://sps.ewi.tudelft.nl/Research/project.php?id=184&ti=5",
     description:
       "My PhD project at the Delft University of Technology in cooperation with the Netherlands Organisation for applied scientific research and Netherlands Defence Academy.",
   },
